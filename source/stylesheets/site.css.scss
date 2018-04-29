@@ -55,23 +55,34 @@ body {
     }
     section.register {
       label {
-        font-weight: 600;
+        &:not([for="email_address"]) {
+          @extend .small-display;
+        }
+        &[for="email_address"] {
+          font-weight: 600;
+        }
       }
       input {
         @extend .small-display;
-        display: block;
-        border: 1px solid black;
-        padding: 1rem;
-        width: 80%;
         box-sizing: border-box;
-        margin-bottom: 1rem;
+        &[type=email],&[type=text] {
+          display: block;
+          border: 1px solid black;
+          padding: 1rem;
+          width: 80%;
+        }
         &[type=submit] {
           @extend .small-display;
+          display: block;
           color: white;
           width: auto;
+          margin-top: 1rem;
           background: black;
           padding: 1rem 1.2rem;
+          border: none;
           cursor: pointer;
+          -webkit-appearance: none;
+          border-radius: 0;
         }
       }
       section.consent {
