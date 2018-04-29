@@ -1,3 +1,5 @@
+$primary: #dd000b;
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-rendering: optimizeLegibility;
@@ -31,7 +33,7 @@ body {
     padding: 1rem;
     h1 {
       @extend .small-display;
-      color: #dd000b;
+      color: $primary;
       span {
         font-size: 2rem;
         vertical-align: middle;
@@ -77,7 +79,7 @@ body {
           color: white;
           width: auto;
           margin-top: 1rem;
-          background: black;
+          background: $primary;
           padding: 1rem 1.2rem;
           border: none;
           cursor: pointer;
