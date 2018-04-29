@@ -71,11 +71,24 @@ body {
         &[for="email_address"] {
           font-weight: 600;
         }
+        &[for="contact_research"] {
+          display: inline-block;
+        }
+      }
+      section.consent {
+        display: flex;
+        margin: 1rem 0;
+        input[type=checkbox] {
+          margin: 0.35rem;
+        }
+        label {
+          margin-left: 0.4rem;
+        }
       }
       input {
-        @extend .small-display;
         box-sizing: border-box;
         &[type=email],&[type=text] {
+          @extend .small-display;
           display: block;
           border: 1px solid black;
           padding: 1rem;
@@ -86,7 +99,6 @@ body {
           display: block;
           color: white;
           width: auto;
-          margin-top: 1rem;
           background: $primary;
           padding: 1rem 1.2rem;
           border: none;
@@ -96,7 +108,9 @@ body {
         }
       }
       section.consent {
-        @extend .small-display;
+        p {
+          @extend .small-display;
+        }
       }
     }
     footer {
