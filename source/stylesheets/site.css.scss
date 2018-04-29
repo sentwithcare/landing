@@ -1,7 +1,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-rendering: optimizeLegibility;
   font-size: 2rem;
-  line-height: 3.2rem;
+  line-height: 2.8rem;
   margin: 0;
   padding: 0;
   .small-display {
@@ -10,9 +11,18 @@ body {
     max-width: 26rem;
   }
   .large-display {
-    @media (min-width: 30rem) {
+    @media (min-width: 42rem) {
       font-size: 4rem;
       line-height: 6rem;
+      h2 {
+        line-height: 6.4rem;
+      }
+      h3 {
+        line-height: 5rem;
+      }
+      p, li {
+        line-height: 4.8rem;
+      }
     }
   }
   main {
@@ -27,10 +37,18 @@ body {
         vertical-align: middle;
       }
     }
+    h2 {
+      line-height: 3.2rem;
+    }
     article,
     section.features {
       @extend .large-display;
       margin-bottom: 6rem;
+      ul {
+        li {
+          margin-bottom: 2rem;
+        }
+      }
       @media (min-width: 30rem) {
         margin-bottom: 12rem;
       }
