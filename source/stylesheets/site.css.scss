@@ -7,6 +7,14 @@ body {
   line-height: 2.8rem;
   margin: 0;
   padding: 0;
+  a {
+    &:link,
+    &:active,
+    &:visited,
+    &:hover {
+      color: $primary;
+    }
+  }
   .small-display {
     font-size: 1rem;
     line-height: 1.6rem;
