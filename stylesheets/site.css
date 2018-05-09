@@ -18,7 +18,7 @@ body {
       line-height: 6rem; }
       body .large-display h2, body main article h2,
       body main section.features h2 {
-        line-height: 6.4rem; }
+        line-height: 7.2rem; }
       body .large-display h3, body main article h3,
       body main section.features h3 {
         line-height: 5rem; }
@@ -37,12 +37,15 @@ body {
         font-size: 2rem;
         vertical-align: middle; }
     body main h2 {
-      line-height: 3.2rem; }
+      line-height: 3.8rem; }
       @media (min-width: 64rem) {
         body main h2 {
           text-indent: -12rem;
-          width: calc(100% + 12rem); } }
-      body main h2 span {
+          width: calc(100% + 12rem); }
+          body main h2 span span {
+            display: inline-block;
+            text-indent: 0rem; } }
+      body main h2 > span {
         border-bottom: 2px solid red; }
     body main article,
     body main section.features {
