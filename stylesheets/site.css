@@ -1,0 +1,90 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-rendering: optimizeLegibility;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin: 0;
+  padding: 0; }
+  body a:link, body a:active, body a:visited, body a:hover {
+    color: #dd000b; }
+  body .small-display, body main h1, body main section.register label:not([for="email_address"]), body main section.register input[type=email], body main section.register input[type=text], body main section.register input[type=submit], body main section.register section.consent p, body main footer {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    max-width: 26rem; }
+  @media (min-width: 42rem) {
+    body .large-display, body main article,
+    body main section.features {
+      font-size: 4rem;
+      line-height: 6rem; }
+      body .large-display h2, body main article h2,
+      body main section.features h2 {
+        line-height: 6.4rem; }
+      body .large-display h3, body main article h3,
+      body main section.features h3 {
+        line-height: 5rem; }
+      body .large-display p, body main article p,
+      body main section.features p, body .large-display li, body main article li,
+      body main section.features li {
+        line-height: 4.8rem; } }
+  body main {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 1rem; }
+    body main h1 {
+      color: #dd000b;
+      font-weight: 600; }
+      body main h1 span {
+        font-size: 2rem;
+        vertical-align: middle; }
+    body main h2 {
+      line-height: 3.2rem; }
+      @media (min-width: 64rem) {
+        body main h2 {
+          text-indent: -12rem;
+          width: calc(100% + 12rem); } }
+      body main h2 span {
+        border-bottom: 2px solid red; }
+    body main article,
+    body main section.features {
+      margin-bottom: 6rem; }
+      body main article ul li,
+      body main section.features ul li {
+        margin-bottom: 2rem; }
+      @media (min-width: 30rem) {
+        body main article,
+        body main section.features {
+          margin-bottom: 12rem; } }
+    body main section.register label[for="email_address"] {
+      font-weight: 600; }
+    body main section.register label[for="contact_research"] {
+      display: inline-block; }
+    body main section.register section.consent {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 1rem 0; }
+      body main section.register section.consent input[type=checkbox] {
+        margin: 0.35rem; }
+      body main section.register section.consent label {
+        margin-left: 0.4rem; }
+    body main section.register input {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      body main section.register input[type=email], body main section.register input[type=text] {
+        display: block;
+        border: 1px solid black;
+        padding: 1rem;
+        width: 80%;
+        margin-bottom: 1rem; }
+      body main section.register input[type=submit] {
+        display: block;
+        color: white;
+        width: auto;
+        background: #dd000b;
+        padding: 1rem 1.2rem;
+        border: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        border-radius: 0; }
+    body main footer {
+      margin: 6rem 0 2rem 0; }
