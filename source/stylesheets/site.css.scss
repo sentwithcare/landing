@@ -25,7 +25,7 @@ body {
       font-size: 4rem;
       line-height: 6rem;
       h2 {
-        line-height: 6.4rem;
+        line-height: 7.2rem;
 
       }
       h3 {
@@ -50,12 +50,16 @@ body {
       }
     }
     h2 {
-      line-height: 3.2rem;
+      line-height: 3.8rem;
       @media (min-width: 64rem) {
         text-indent: -12rem;
-        width: calc(100% + 12rem)
+        width: calc(100% + 12rem);
+        span span {
+          display: inline-block;
+          text-indent: 0rem;
+        }
       }
-      span {
+      > span {
         border-bottom: 2px solid red;
       }
     }
