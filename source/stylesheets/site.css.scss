@@ -1,4 +1,7 @@
 $primary: #dd000b;
+$white: #fff;
+$black: #000;
+$grey: lighten($black, 80%);
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -7,6 +10,7 @@ body {
   line-height: 2.8rem;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   a {
     &:link,
     &:active,
@@ -20,7 +24,7 @@ body {
   }
   .strike {
     text-decoration: line-through;
-    color: #c5c5c5;
+    color: $grey;
   }
   .small-display {
     font-size: 1rem;
@@ -33,7 +37,6 @@ body {
       line-height: 6rem;
       h2 {
         line-height: 7.2rem;
-
       }
       h3 {
         line-height: 5rem;
@@ -42,6 +45,16 @@ body {
         line-height: 4.8rem;
       }
     }
+  }
+  .dotted {
+    background:
+        radial-gradient($grey 15%, transparent 16%),
+        radial-gradient($grey 15%, transparent 16%),
+        transparent;
+    background-position:
+        0 0, 40px 40px;
+    background-size:
+        16px 16px;
   }
   main {
     max-width: 38rem;
@@ -67,18 +80,22 @@ body {
         }
       }
       > span {
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid $primary;
       }
     }
     article,
     section.features {
-      @extend .large-display;
-      margin-bottom: 6rem;
-      ul {
-        li {
-          margin-bottom: 2rem;
+      img {
+        position: relative;
+        width: 100%;
+        @media (min-width: 64rem) {
+          left: -12rem;
+          width: calc(100% + 24rem);
         }
       }
+
+      @extend .large-display;
+      margin-bottom: 6rem;
       @media (min-width: 30rem) {
         margin-bottom: 12rem;
       }
@@ -123,7 +140,7 @@ body {
         &[type=email],&[type=text] {
           @extend .small-display;
           display: block;
-          border: 1px solid black;
+          border: 1px solid $black;
           padding: 1rem;
           width: 80%;
           margin-bottom: 1rem;
