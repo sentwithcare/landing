@@ -4,14 +4,15 @@ body {
   font-size: 2rem;
   line-height: 2.8rem;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
   body a:link, body a:active, body a:visited, body a:hover {
     color: #dd000b; }
   body .screenreader {
     display: none; }
   body .strike {
     text-decoration: line-through;
-    color: #c5c5c5; }
+    color: #cccccc; }
   body .small-display, body main h1, body main section.register label:not([for="email_address"]), body main section.register input[type=email], body main section.register input[type=text], body main section.register input[type=submit], body main section.register section.consent p, body main footer {
     font-size: 1rem;
     line-height: 1.6rem;
@@ -31,6 +32,10 @@ body {
       body main section.features p, body .large-display li, body main article li,
       body main section.features li {
         line-height: 4.8rem; } }
+  body .dotted {
+    background: radial-gradient(#cccccc 15%, transparent 16%), radial-gradient(#cccccc 15%, transparent 16%), transparent;
+    background-position: 0 0, 40px 40px;
+    background-size: 16px 16px; }
   body main {
     max-width: 38rem;
     margin: 0 auto;
@@ -51,13 +56,19 @@ body {
             display: inline-block;
             text-indent: 0rem; } }
       body main h2 > span {
-        border-bottom: 2px solid red; }
+        border-bottom: 2px solid #dd000b; }
     body main article,
     body main section.features {
       margin-bottom: 6rem; }
-      body main article ul li,
-      body main section.features ul li {
-        margin-bottom: 2rem; }
+      body main article img,
+      body main section.features img {
+        position: relative;
+        width: 100%; }
+        @media (min-width: 64rem) {
+          body main article img,
+          body main section.features img {
+            left: -12rem;
+            width: calc(100% + 24rem); } }
       @media (min-width: 30rem) {
         body main article,
         body main section.features {
@@ -90,7 +101,7 @@ body {
               box-sizing: border-box; }
       body main section.register input[type=email], body main section.register input[type=text] {
         display: block;
-        border: 1px solid black;
+        border: 1px solid #000;
         padding: 1rem;
         width: 80%;
         margin-bottom: 1rem; }
