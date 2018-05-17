@@ -60,6 +60,10 @@ body {
     max-width: 38rem;
     margin: 0 auto;
     padding: 1rem;
+    overflow: hidden;
+    @media (min-width: 42rem) {
+      overflow: visible;
+    }
     h1 {
       @extend .small-display;
       color: $primary;
@@ -87,13 +91,17 @@ body {
     section.features {
       img {
         position: relative;
-        width: 100%;
+        left: -50%;
+        width: 200%;
+        @media (min-width: 34rem) {
+          left: auto;
+          width: 100%;
+        }
         @media (min-width: 64rem) {
           left: -12rem;
           width: calc(100% + 24rem);
         }
       }
-
       @extend .large-display;
       margin-bottom: 6rem;
       @media (min-width: 30rem) {
